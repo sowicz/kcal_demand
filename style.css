@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(139, 139, 139);
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+.suwaki {
+    
+    width: 45%;
+    height: 100px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.labelki {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+
+   /* border: 1px solid black; */
+}
+
+input {
+    margin: 5px;
+}
+.inputy {
+    text-align: center;
+    position: relative;
+    top: -78px;
+    margin-left: 100%;
+    width: 230px;
+    
+   /* border: 1px solid black; */
+
+}
