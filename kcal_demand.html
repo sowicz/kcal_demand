@@ -11,35 +11,53 @@
 
 </head>
 <body>
+    <nav id="navbar">
+        <ul>
+            <img class="logo" src="" alt="">
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">Zapotrzebowanie kaloryczne</a></li>
+            <li><a href="#">Trening</a></li>
+        </ul>
+    </nav>
 
     <H1>Kalkulator zapotrzebowania kalorcznego</H1>
 
 
     <div class="suwaki-container">
 
-        <div class="wiek-container">
-            Wiek 
-            <div class="wiek-value"></div>
-            <input type="range" id="wiek-suwak" min="10" max="100" >
+            <div class="suwaki-column">
+                <div class="wiek-suwak">
+                    Wiek
+                    <br>
+                    <input type="range" id="wiek-suwak" min="10" max="100" >
+                    <div class="wiek">55</div>
+                </div>
+                <div class="waga-suwak">
+                    Waga [kg]
+                    <br>
+                    <input type="range" id="waga-suwak" min="30" max="140" >
+                    <div class="waga">85</div>
+                </div>
+                <div class="akt-suwak">
+                    Poziom aktywności fizycznej
+                    <br>
+                    <input type="range" id="aktywnosc-suwak" min="1" max="5" >
+                    <div class="aktywnosc">3</div>
+                </div>
+            </div>
+            <br>
+                <div class="buttons">
+                    <button type="submit" name="oblicz" class="przelicz-btn" onclick="przelicz()">Oblicz</button>
+                    <button type="submit" name="reset" class="reset" onclick="reset()">Reset</button>
+                </div>
+            <br>
+                <div class="info-oblicz"></div>
+                <div class="wynik"></div>
+            <br>
+            
         </div>
-        <div class="waga-container">
-            Waga
-            <div class="waga-value"></div>
-            <input type="range" id="waga-suwak" min="30" max="140" >
-        </div>
-        <div class="aktywnosc-container">
-            Poziom aktywności fizycznej
-            <div class="aktywnosc-value"></div>
-            <input type="range" id="aktywnosc-suwak" min="1" max="5" >
-        </div>
- 
 
-    </div>
-
-
-    <input type="submit" name="Przelicz" id="przelicz-btn">
     
-
     <script src="kcal_d.js"></script>
 </body>
 </html>

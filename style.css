@@ -1,12 +1,207 @@
 * {
     box-sizing: border-box;
+}  
+body {
+    background-image: linear-gradient(to bottom right, #6699FF
+, #CCCCFF);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vw;
+
+    margin: 0;
+}
+#navbar {
+    width: 100%;
+    position: sticky;
+    padding: 5px;
+    top: 0;
+    background-color: lightcyan;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.1);
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#navbar li {
+    margin: 0 0 0 10%;
+}
+#navbar li a {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
+    margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: rgb(139, 139, 139);
+    color: white;
     font-weight: bold;
     font-size: 2rem;
+    margin-bottom: 50px;
     
+}
+.suwaki-container {
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: lightcyan;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 10px;
+    width: 250px;
+    padding-bottom: 20px;
+    box-shadow: 0px 2px 8px -2px gray;
+}
+
+.suwaki-column {
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.wiek-suwak {
+    margin-bottom: 10px;
+}
+.waga-suwak {
+    margin-bottom: 10px;
+}
+
+.wiek, .waga, .aktywnosc {
+    color: white;
+    margin: auto;
+   width: 30px;
+   padding-top: 2px;
+    background-color: crimson;
+    border-radius: 5px;
+
+}
+.buttons {
+    display: flex;
+}
+.przelicz-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: lightcyan;
+    border: 2px solid #0099ff;
+    transition-duration: 0.4s;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+.przelicz-btn:hover {
+    background-color: #0099ff;
+    color: white;
+}
+.reset {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: lightcyan;
+    border: 2px solid crimson;
+    transition-duration: 0.4s;
+    padding: 5px 10px;
+}
+.reset:hover {
+    background-color: crimson;
+    color: white;
+}
+.bubble-wiek {
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: auto;
+    left: 250px;
+    top: -310px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0px 2px 8px -2px gray;
+    z-index: -1;
+
+    animation: 0.5s fadein;
+}
+.bubble-waga {
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: auto;
+    left: 250px;
+    top: -238px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0px 2px 8px -2px gray;
+
+    animation: 0.5s fadein;
+}
+.bubble-akt {
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: auto;
+    left: 380px;
+    top: -238px;
+    text-align: center;
+    width: 380px;
+    height: 180px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0px 2px 8px -2px gray;
+
+    animation: 0.5s fadein;
+}
+.akt-arrow {
+    content: "";
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    left: 190px;
+    top: -330px;
+    transform: rotate(45deg);
+    animation: 0.5s fadein;
+}
+.wiek-arrow {
+    content: "";
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    left: 175px;
+    top: -335px;
+    transform: rotate(45deg);
+    animation: 0.5s fadein;
+    z-index: -1;
+}
+.waga-arrow {
+    content: "";
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    left: 175px;
+    top: -265px;
+    transform: rotate(45deg);
+    animation: 0.5s fadein;
+
+}
+@keyframes fadein {
+    0%{opacity:0}
+    100%{opacity:1}
 }
